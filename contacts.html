@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us | Bawana Chamber of Industries</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#f5f7fa;
+color:#333;
+}
+
+header{
+background:#0A2540;
+padding:15px 5%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+flex-wrap:wrap;
+}
+
+.logo{
+display:flex;
+align-items:center;
+gap:15px;
+}
+
+.logo img{
+height:90px;
+background:#fff;
+padding:5px;
+border-radius:10px;
+}
+
+.logo-text h2{
+color:white;
+font-size:28px;
+}
+
+.logo-text p{
+color:#D4AF37;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:15px;
+font-weight:bold;
+}
+
+nav a:hover{
+color:#D4AF37;
+}
+
+.hero{
+background:linear-gradient(rgba(10,37,64,.92),rgba(10,37,64,.92));
+padding:80px 20px;
+text-align:center;
+color:white;
+}
+
+.hero h1{
+font-size:50px;
+margin-bottom:10px;
+}
+
+.container{
+max-width:1200px;
+margin:auto;
+padding:60px 20px;
+}
+
+.contact-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:30px;
+}
+
+.card{
+background:white;
+padding:35px;
+border-radius:15px;
+box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+
+.card h2{
+color:#0A2540;
+margin-bottom:25px;
+}
+
+.info{
+margin-bottom:20px;
+line-height:1.8;
+font-size:16px;
+}
+
+.info strong{
+color:#0A2540;
+}
+
+.map-btn{
+display:inline-block;
+margin-top:15px;
+background:#0A2540;
+color:white;
+padding:12px 20px;
+text-decoration:none;
+border-radius:6px;
+}
+
+.map-btn:hover{
+background:#153d66;
+}
+
+input,
+textarea{
+width:100%;
+padding:14px;
+margin-bottom:15px;
+border:1px solid #ddd;
+border-radius:8px;
+font-size:15px;
+}
+
+button{
+background:#0A2540;
+color:white;
+padding:14px 30px;
+border:none;
+border-radius:8px;
+cursor:pointer;
+font-weight:bold;
+}
+
+button:hover{
+background:#153d66;
+}
+
+.map{
+margin-top:40px;
+border-radius:15px;
+overflow:hidden;
+box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+
+footer{
+background:#0A2540;
+color:white;
+text-align:center;
+padding:25px;
+margin-top:50px;
+}
+
+.whatsapp{
+position:fixed;
+right:20px;
+bottom:20px;
+width:60px;
+height:60px;
+background:#25D366;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:28px;
+color:white;
+text-decoration:none;
+box-shadow:0 0 15px rgba(0,0,0,.3);
+}
+
+@media(max-width:768px){
+
+.contact-grid{
+grid-template-columns:1fr;
+}
+
+.hero h1{
+font-size:36px;
+}
+
+nav{
+margin-top:15px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+
+<img src="bci-logo.jpg" alt="BCI Logo">
+
+<div class="logo-text">
+<h2>Bawana Chamber of Industries</h2>
+<p>Hamesha Ek Kadam Aage</p>
+</div>
+
+</div>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="services.html">Services</a>
+<a href="events.html">Events</a>
+<a href="contact.html">Contact</a>
+</nav>
+
+</header>
+
+<section class="hero">
+
+<h1>Contact Us</h1>
+
+<p>
+Get in touch with Bawana Chamber of Industries
+</p>
+
+</section>
+
+<div class="container">
+
+<div class="contact-grid">
+
+<div class="card">
+
+<h2>Contact Information</h2>
+
+<div class="info">
+<strong>Phone:</strong><br>
++91 9811884304
+</div>
+
+<div class="info">
+<strong>Email:</strong><br>
+info@bawanachambersofindustries.org
+</div>
+
+<div class="info">
+<strong>Office Address:</strong><br>
+B-115, Sector-3,<br>
+Bawana, Delhi - 110039
+</div>
+
+<div class="info">
+<strong>Working Hours:</strong><br>
+Monday - Saturday<br>
+10:00 AM - 6:00 PM
+</div>
+
+<a
+href="https://maps.google.com/?q=B-115,Sector-3,Bawana,Delhi,110039"
+target="_blank"
+class="map-btn">
+Open in Google Maps
+</a>
+
+</div>
+
+<div class="card">
+
+<h2>Send Us A Message</h2>
+
+<form>
+
+<input type="text" placeholder="Your Name" required>
+
+<input type="email" placeholder="Your Email" required>
+
+<input type="text" placeholder="Phone Number">
+
+<textarea rows="6" placeholder="Your Message"></textarea>
+
+<button type="submit">Send Message</button>
+
+</form>
+
+</div>
+
+</div>
+
+<div class="map">
+
+<iframe
+src="https://maps.google.com/maps?q=B-115%20Sector-3%20Bawana%20Delhi%20110039&output=embed"
+width="100%"
+height="450"
+style="border:0;"
+allowfullscreen=""
+loading="lazy">
+</iframe>
+
+</div>
+
+</div>
+
+<footer>
+© 2026 Bawana Chamber of Industries (BCI). All Rights Reserved.
+</footer>
+
+<a href="https://wa.me/919811884304" target="_blank" class="whatsapp">
+📞
+</a>
+
+</body>
+</html>
