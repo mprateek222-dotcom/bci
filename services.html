@@ -1,27 +1,167 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Services - BCI</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Services | Bawana Chamber of Industries</title>
 
 <style>
-body{font-family:Arial;margin:0;background:#f5f7fa;}
-header{background:#0A2540;color:#fff;padding:15px 5%;display:flex;justify-content:space-between;align-items:center;}
-.logo{display:flex;align-items:center;gap:15px;}
-.logo img{height:80px;background:#fff;padding:5px;}
-nav a{color:white;text-decoration:none;margin-left:15px;}
-.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:25px;padding:60px;}
-.card{background:white;border-radius:10px;overflow:hidden;box-shadow:0 0 15px rgba(0,0,0,.08);}
-.card img{width:100%;height:220px;object-fit:cover;}
-.card-content{padding:20px;}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#f5f7fa;
+color:#333;
+}
+
+header{
+background:#0A2540;
+padding:15px 5%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+flex-wrap:wrap;
+}
+
+.logo{
+display:flex;
+align-items:center;
+gap:15px;
+}
+
+.logo img{
+height:90px;
+background:#fff;
+padding:5px;
+border-radius:8px;
+}
+
+.logo h2{
+color:white;
+}
+
+.logo p{
+color:#D4AF37;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:15px;
+font-weight:bold;
+}
+
+.hero{
+background:linear-gradient(rgba(10,37,64,.85),rgba(10,37,64,.85)),
+url('https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1800&q=80');
+background-size:cover;
+background-position:center;
+padding:120px 20px;
+text-align:center;
+color:white;
+}
+
+.hero h1{
+font-size:55px;
+margin-bottom:15px;
+}
+
+.container{
+max-width:1300px;
+margin:auto;
+padding:60px 20px;
+}
+
+.section-title{
+text-align:center;
+font-size:42px;
+color:#0A2540;
+margin-bottom:40px;
+}
+
+.services{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+gap:25px;
+}
+
+.card{
+background:white;
+border-radius:12px;
+overflow:hidden;
+box-shadow:0 0 15px rgba(0,0,0,.08);
+}
+
+.card img{
+width:100%;
+height:220px;
+object-fit:cover;
+}
+
+.card-content{
+padding:25px;
+}
+
+.card-content h3{
+color:#0A2540;
+margin-bottom:15px;
+}
+
+.card-content p{
+line-height:1.8;
+}
+
+.highlight{
+background:#0A2540;
+color:white;
+padding:60px 30px;
+border-radius:12px;
+margin-top:50px;
+text-align:center;
+}
+
+footer{
+background:#0A2540;
+color:white;
+text-align:center;
+padding:25px;
+margin-top:50px;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:38px;
+}
+
+header{
+flex-direction:column;
+gap:15px;
+}
+
+}
+
 </style>
 </head>
 
 <body>
 
 <header>
+
 <div class="logo">
-<img src="bci-logo.jpg.jpg">
-<div><h2>BCI</h2></div>
+
+<img src="bci-logo.jpg.jpg" alt="BCI Logo">
+
+<div>
+<h2>Bawana Chamber of Industries</h2>
+<p>Hamesha Ek Kadam Aage</p>
+</div>
+
 </div>
 
 <nav>
@@ -31,32 +171,140 @@ nav a{color:white;text-decoration:none;margin-left:15px;}
 <a href="events.html">Events</a>
 <a href="contacts.html">Contact</a>
 </nav>
+
 </header>
 
-<div class="cards">
+<section class="hero">
+
+<h1>Our Services</h1>
+
+<p>
+Supporting Industries Through Professional Guidance, Representation & Development
+</p>
+
+</section>
+
+<div class="container">
+
+<h2 class="section-title">Services We Offer</h2>
+
+<div class="services">
 
 <div class="card">
+
 <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1200&q=80">
+
 <div class="card-content">
+
 <h3>Member Industry Support</h3>
+
+<p>
+Providing dedicated assistance and guidance to industries operating in Bawana Industrial Area. We help members address operational challenges and stay informed about industry developments.
+</p>
+
 </div>
+
 </div>
 
 <div class="card">
+
 <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=1200&q=80">
+
 <div class="card-content">
+
 <h3>Re-registration Assistance</h3>
+
+<p>
+Professional support for industrial registrations, renewals, documentation and procedural requirements to ensure smooth business operations.
+</p>
+
 </div>
+
 </div>
 
 <div class="card">
+
 <img src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=1200&q=80">
+
 <div class="card-content">
+
 <h3>NOC Facilitation</h3>
-</div>
+
+<p>
+Assistance in obtaining No Objection Certificates and various approvals required for industrial and business activities.
+</p>
+
 </div>
 
 </div>
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1200&q=80">
+
+<div class="card-content">
+
+<h3>Government Liaison Services</h3>
+
+<p>
+Acting as a bridge between industries and government departments to resolve issues and represent the interests of member industries.
+</p>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=1200&q=80">
+
+<div class="card-content">
+
+<h3>Training & Development Programs</h3>
+
+<p>
+Organizing workshops, seminars, leadership sessions and skill development programs to enhance business performance and productivity.
+</p>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1200&q=80">
+
+<div class="card-content">
+
+<h3>Business Networking</h3>
+
+<p>
+Creating opportunities for collaboration, partnerships and growth through networking events, industry meetings and business interactions.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="highlight">
+
+<h2>Why Choose BCI?</h2>
+
+<br>
+
+<p>
+Bawana Chamber of Industries is committed to strengthening the industrial ecosystem through advocacy, professional support, knowledge-sharing and industry representation. Our mission is to help businesses grow, remain competitive and contribute to economic development.
+</p>
+
+</div>
+
+</div>
+
+<footer>
+© 2026 Bawana Chamber of Industries (BCI) | All Rights Reserved
+</footer>
 
 </body>
 </html>
