@@ -1,27 +1,182 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Events - BCI</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Events & Workshops | Bawana Chamber of Industries</title>
 
 <style>
-body{font-family:Arial;margin:0;background:#f5f7fa;}
-header{background:#0A2540;color:#fff;padding:15px 5%;display:flex;justify-content:space-between;align-items:center;}
-.logo{display:flex;align-items:center;gap:15px;}
-.logo img{height:80px;background:#fff;padding:5px;}
-nav a{color:white;text-decoration:none;margin-left:15px;}
-.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:25px;padding:60px;}
-.card{background:white;border-radius:10px;overflow:hidden;box-shadow:0 0 15px rgba(0,0,0,.08);}
-.card img{width:100%;height:220px;object-fit:cover;}
-.card-content{padding:20px;}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#f5f7fa;
+color:#333;
+}
+
+header{
+background:#0A2540;
+padding:15px 5%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+flex-wrap:wrap;
+}
+
+.logo{
+display:flex;
+align-items:center;
+gap:15px;
+}
+
+.logo img{
+height:90px;
+background:#fff;
+padding:5px;
+border-radius:8px;
+}
+
+.logo h2{
+color:white;
+}
+
+.logo p{
+color:#D4AF37;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:15px;
+font-weight:bold;
+}
+
+.hero{
+background:linear-gradient(rgba(10,37,64,.85),rgba(10,37,64,.85)),
+url('https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=1800&q=80');
+background-size:cover;
+background-position:center;
+padding:120px 20px;
+text-align:center;
+color:white;
+}
+
+.hero h1{
+font-size:55px;
+margin-bottom:15px;
+}
+
+.container{
+max-width:1300px;
+margin:auto;
+padding:60px 20px;
+}
+
+.section-title{
+text-align:center;
+font-size:42px;
+color:#0A2540;
+margin-bottom:40px;
+}
+
+.events{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+gap:25px;
+}
+
+.card{
+background:white;
+border-radius:12px;
+overflow:hidden;
+box-shadow:0 0 15px rgba(0,0,0,.08);
+}
+
+.card img{
+width:100%;
+height:230px;
+object-fit:cover;
+}
+
+.card-content{
+padding:25px;
+}
+
+.card-content h3{
+color:#0A2540;
+margin-bottom:15px;
+}
+
+.card-content p{
+line-height:1.8;
+}
+
+.highlight{
+background:#0A2540;
+color:white;
+padding:60px 30px;
+border-radius:12px;
+margin-top:50px;
+}
+
+.benefits{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+margin-top:30px;
+}
+
+.benefit{
+background:white;
+color:#333;
+padding:20px;
+border-radius:10px;
+font-weight:bold;
+text-align:center;
+}
+
+footer{
+background:#0A2540;
+color:white;
+text-align:center;
+padding:25px;
+margin-top:50px;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:38px;
+}
+
+header{
+flex-direction:column;
+gap:15px;
+}
+
+}
+
 </style>
 </head>
 
 <body>
 
 <header>
+
 <div class="logo">
-<img src="bci-logo.jpg.jpg">
-<div><h2>BCI</h2></div>
+
+<img src="bci-logo.jpg.jpg" alt="BCI Logo">
+
+<div>
+<h2>Bawana Chamber of Industries</h2>
+<p>Hamesha Ek Kadam Aage</p>
+</div>
+
 </div>
 
 <nav>
@@ -31,32 +186,150 @@ nav a{color:white;text-decoration:none;margin-left:15px;}
 <a href="events.html">Events</a>
 <a href="contacts.html">Contact</a>
 </nav>
+
 </header>
 
-<div class="cards">
+<section class="hero">
+
+<h1>Events & Workshops</h1>
+
+<p>
+Connecting Industries Through Knowledge, Networking & Growth Opportunities
+</p>
+
+</section>
+
+<div class="container">
+
+<h2 class="section-title">Our Key Programs</h2>
+
+<div class="events">
 
 <div class="card">
+
 <img src="https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=1200&q=80">
+
 <div class="card-content">
+
 <h3>Industrial Seminars</h3>
+
+<p>
+Regular seminars covering industrial policies, market trends, emerging opportunities and business growth strategies.
+</p>
+
 </div>
+
 </div>
 
 <div class="card">
+
 <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1200&q=80">
+
 <div class="card-content">
-<h3>HR Workshops</h3>
+
+<h3>HR Development Workshops</h3>
+
+<p>
+Training programs focused on leadership development, workforce productivity, management excellence and professional growth.
+</p>
+
 </div>
+
 </div>
 
 <div class="card">
+
 <img src="https://images.unsplash.com/photo-1515169067868-5387ec356754?auto=format&fit=crop&w=1200&q=80">
+
 <div class="card-content">
-<h3>Networking Meets</h3>
-</div>
+
+<h3>Business Networking Meets</h3>
+
+<p>
+Providing opportunities for entrepreneurs, manufacturers and business leaders to connect and collaborate.
+</p>
+
 </div>
 
 </div>
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&q=80">
+
+<div class="card-content">
+
+<h3>Government & Industry Interaction</h3>
+
+<p>
+Interactive sessions where industries can directly engage with government officials and discuss important issues.
+</p>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1431540015161-0bf868a2d407?auto=format&fit=crop&w=1200&q=80">
+
+<div class="card-content">
+
+<h3>Compliance Awareness Sessions</h3>
+
+<p>
+Workshops designed to educate industries on legal requirements, industrial regulations and compliance best practices.
+</p>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1200&q=80">
+
+<div class="card-content">
+
+<h3>Annual Industry Conferences</h3>
+
+<p>
+Large-scale events bringing together policymakers, industry experts and business leaders to discuss industrial growth.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="highlight">
+
+<h2 style="text-align:center;">Benefits of Participation</h2>
+
+<div class="benefits">
+
+<div class="benefit">Industry Updates</div>
+
+<div class="benefit">Knowledge Sharing</div>
+
+<div class="benefit">Networking Opportunities</div>
+
+<div class="benefit">Government Interaction</div>
+
+<div class="benefit">Business Growth Insights</div>
+
+<div class="benefit">Professional Development</div>
+
+</div>
+
+</div>
+
+</div>
+
+<footer>
+© 2026 Bawana Chamber of Industries (BCI) | All Rights Reserved
+</footer>
 
 </body>
 </html>
