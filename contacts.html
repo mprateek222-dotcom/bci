@@ -38,12 +38,11 @@ gap:15px;
 height:90px;
 background:#fff;
 padding:5px;
-border-radius:10px;
+border-radius:8px;
 }
 
 .logo-text h2{
 color:white;
-font-size:28px;
 }
 
 .logo-text p{
@@ -57,26 +56,31 @@ margin-left:15px;
 font-weight:bold;
 }
 
-nav a:hover{
-color:#D4AF37;
-}
-
 .hero{
-background:linear-gradient(rgba(10,37,64,.92),rgba(10,37,64,.92));
-padding:80px 20px;
+background:linear-gradient(rgba(10,37,64,.85),rgba(10,37,64,.85)),
+url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1800&q=80');
+background-size:cover;
+background-position:center;
+padding:120px 20px;
 text-align:center;
 color:white;
 }
 
 .hero h1{
-font-size:50px;
-margin-bottom:10px;
+font-size:55px;
+margin-bottom:15px;
+}
+
+.hero p{
+font-size:20px;
+max-width:800px;
+margin:auto;
 }
 
 .container{
-max-width:1200px;
+max-width:1300px;
 margin:auto;
-padding:60px 20px;
+padding:70px 20px;
 }
 
 .contact-grid{
@@ -85,71 +89,66 @@ grid-template-columns:1fr 1fr;
 gap:30px;
 }
 
-.card{
+.info-box,
+.form-box{
 background:white;
 padding:35px;
-border-radius:15px;
+border-radius:12px;
 box-shadow:0 5px 20px rgba(0,0,0,.08);
 }
 
-.card h2{
+.info-box h2,
+.form-box h2{
 color:#0A2540;
-margin-bottom:25px;
-}
-
-.info{
 margin-bottom:20px;
+}
+
+.info-box p{
+margin-bottom:15px;
 line-height:1.8;
-font-size:16px;
 }
 
-.info strong{
-color:#0A2540;
-}
-
-.map-btn{
-display:inline-block;
-margin-top:15px;
-background:#0A2540;
-color:white;
-padding:12px 20px;
-text-decoration:none;
-border-radius:6px;
-}
-
-.map-btn:hover{
-background:#153d66;
-}
-
-input,
-textarea{
+.form-box input,
+.form-box textarea{
 width:100%;
 padding:14px;
 margin-bottom:15px;
 border:1px solid #ddd;
-border-radius:8px;
-font-size:15px;
+border-radius:6px;
 }
 
-button{
+.form-box button{
 background:#0A2540;
 color:white;
-padding:14px 30px;
+padding:14px 25px;
 border:none;
-border-radius:8px;
+border-radius:6px;
 cursor:pointer;
 font-weight:bold;
 }
 
-button:hover{
-background:#153d66;
-}
-
 .map{
 margin-top:40px;
-border-radius:15px;
-overflow:hidden;
-box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+
+.map iframe{
+width:100%;
+height:450px;
+border:none;
+border-radius:12px;
+}
+
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+padding:15px 20px;
+border-radius:50px;
+text-decoration:none;
+font-weight:bold;
+box-shadow:0 5px 15px rgba(0,0,0,.2);
 }
 
 footer{
@@ -160,23 +159,6 @@ padding:25px;
 margin-top:50px;
 }
 
-.whatsapp{
-position:fixed;
-right:20px;
-bottom:20px;
-width:60px;
-height:60px;
-background:#25D366;
-border-radius:50%;
-display:flex;
-align-items:center;
-justify-content:center;
-font-size:28px;
-color:white;
-text-decoration:none;
-box-shadow:0 0 15px rgba(0,0,0,.3);
-}
-
 @media(max-width:768px){
 
 .contact-grid{
@@ -184,11 +166,12 @@ grid-template-columns:1fr;
 }
 
 .hero h1{
-font-size:36px;
+font-size:38px;
 }
 
-nav{
-margin-top:15px;
+header{
+flex-direction:column;
+gap:15px;
 }
 
 }
@@ -202,7 +185,7 @@ margin-top:15px;
 
 <div class="logo">
 
-<img src="bci-logo.jpg" alt="BCI Logo">
+<img src="bci-logo.jpg.jpg" alt="BCI Logo">
 
 <div class="logo-text">
 <h2>Bawana Chamber of Industries</h2>
@@ -216,7 +199,7 @@ margin-top:15px;
 <a href="about.html">About</a>
 <a href="services.html">Services</a>
 <a href="events.html">Events</a>
-<a href="contact.html">Contact</a>
+<a href="contacts.html">Contact</a>
 </nav>
 
 </header>
@@ -226,7 +209,7 @@ margin-top:15px;
 <h1>Contact Us</h1>
 
 <p>
-Get in touch with Bawana Chamber of Industries
+We're here to assist industries, entrepreneurs and business owners with professional support and guidance.
 </p>
 
 </section>
@@ -235,56 +218,50 @@ Get in touch with Bawana Chamber of Industries
 
 <div class="contact-grid">
 
-<div class="card">
+<div class="info-box">
 
-<h2>Contact Information</h2>
+<h2>Office Information</h2>
 
-<div class="info">
-<strong>Phone:</strong><br>
+<p><strong>Address:</strong><br>
+B-115, Sector-3, Bawana, Delhi - 110039
+</p>
+
+<p><strong>Phone:</strong><br>
 +91 9811884304
-</div>
+</p>
 
-<div class="info">
-<strong>Email:</strong><br>
+<p><strong>Email:</strong><br>
 info@bawanachambersofindustries.org
-</div>
+</p>
 
-<div class="info">
-<strong>Office Address:</strong><br>
-B-115, Sector-3,<br>
-Bawana, Delhi - 110039
-</div>
-
-<div class="info">
-<strong>Working Hours:</strong><br>
+<p><strong>Office Hours:</strong><br>
 Monday - Saturday<br>
 10:00 AM - 6:00 PM
-</div>
+</p>
 
-<a
-href="https://maps.google.com/?q=B-115,Sector-3,Bawana,Delhi,110039"
-target="_blank"
-class="map-btn">
-Open in Google Maps
-</a>
+<p>
+Bawana Chamber of Industries welcomes inquiries from industrial units, entrepreneurs, investors and stakeholders interested in industrial growth and development.
+</p>
 
 </div>
 
-<div class="card">
+<div class="form-box">
 
-<h2>Send Us A Message</h2>
+<h2>Membership / General Enquiry</h2>
 
 <form>
 
-<input type="text" placeholder="Your Name" required>
+<input type="text" placeholder="Full Name" required>
 
-<input type="email" placeholder="Your Email" required>
+<input type="email" placeholder="Email Address" required>
 
-<input type="text" placeholder="Phone Number">
+<input type="text" placeholder="Phone Number" required>
+
+<input type="text" placeholder="Company Name">
 
 <textarea rows="6" placeholder="Your Message"></textarea>
 
-<button type="submit">Send Message</button>
+<button type="submit">Submit Enquiry</button>
 
 </form>
 
@@ -294,26 +271,25 @@ Open in Google Maps
 
 <div class="map">
 
+<h2 style="text-align:center;margin-bottom:20px;color:#0A2540;">
+Find Us On Map
+</h2>
+
 <iframe
-src="https://maps.google.com/maps?q=B-115%20Sector-3%20Bawana%20Delhi%20110039&output=embed"
-width="100%"
-height="450"
-style="border:0;"
-allowfullscreen=""
-loading="lazy">
+src="https://maps.google.com/maps?q=B-115%20Sector-3%20Bawana%20Delhi%20110039&t=&z=15&ie=UTF8&iwloc=&output=embed">
 </iframe>
 
 </div>
 
 </div>
 
-<footer>
-© 2026 Bawana Chamber of Industries (BCI). All Rights Reserved.
-</footer>
-
-<a href="https://wa.me/919811884304" target="_blank" class="whatsapp">
-📞
+<a href="https://wa.me/919811884304" class="whatsapp">
+WhatsApp Us
 </a>
+
+<footer>
+© 2026 Bawana Chamber of Industries (BCI) | All Rights Reserved
+</footer>
 
 </body>
 </html>
