@@ -41,11 +41,11 @@ padding:5px;
 border-radius:8px;
 }
 
-.logo h2{
+.logo-text h2{
 color:white;
 }
 
-.logo p{
+.logo-text p{
 color:#D4AF37;
 }
 
@@ -54,6 +54,10 @@ color:white;
 text-decoration:none;
 margin-left:15px;
 font-weight:bold;
+}
+
+nav a:hover{
+color:#D4AF37;
 }
 
 .hero{
@@ -71,10 +75,17 @@ font-size:55px;
 margin-bottom:15px;
 }
 
+.hero p{
+font-size:20px;
+max-width:900px;
+margin:auto;
+line-height:1.8;
+}
+
 .container{
 max-width:1300px;
 margin:auto;
-padding:60px 20px;
+padding:70px 20px;
 }
 
 .section-title{
@@ -94,7 +105,12 @@ gap:25px;
 background:white;
 border-radius:12px;
 overflow:hidden;
-box-shadow:0 0 15px rgba(0,0,0,.08);
+box-shadow:0 5px 20px rgba(0,0,0,.08);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
 }
 
 .card img{
@@ -119,25 +135,49 @@ line-height:1.8;
 .highlight{
 background:#0A2540;
 color:white;
-padding:60px 30px;
+padding:60px 40px;
 border-radius:12px;
-margin-top:50px;
+margin:60px 0;
+text-align:center;
+}
+
+.highlight h2{
+margin-bottom:20px;
 }
 
 .benefits{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
 gap:20px;
-margin-top:30px;
+margin-top:40px;
 }
 
 .benefit{
 background:white;
-color:#333;
-padding:20px;
+padding:25px;
 border-radius:10px;
-font-weight:bold;
+box-shadow:0 0 15px rgba(0,0,0,.08);
 text-align:center;
+font-weight:bold;
+color:#0A2540;
+}
+
+.cta{
+background:#D4AF37;
+padding:60px 20px;
+text-align:center;
+border-radius:12px;
+margin-top:50px;
+}
+
+.cta h2{
+margin-bottom:15px;
+color:white;
+}
+
+.cta p{
+color:white;
+font-size:18px;
 }
 
 footer{
@@ -151,7 +191,7 @@ margin-top:50px;
 @media(max-width:768px){
 
 .hero h1{
-font-size:38px;
+font-size:36px;
 }
 
 header{
@@ -172,7 +212,7 @@ gap:15px;
 
 <img src="bci-logo.jpg.jpg" alt="BCI Logo">
 
-<div>
+<div class="logo-text">
 <h2>Bawana Chamber of Industries</h2>
 <p>Hamesha Ek Kadam Aage</p>
 </div>
@@ -194,7 +234,7 @@ gap:15px;
 <h1>Events & Workshops</h1>
 
 <p>
-Connecting Industries Through Knowledge, Networking & Growth Opportunities
+Connecting Industries Through Knowledge, Innovation, Networking and Growth Opportunities
 </p>
 
 </section>
@@ -206,122 +246,97 @@ Connecting Industries Through Knowledge, Networking & Growth Opportunities
 <div class="events">
 
 <div class="card">
-
 <img src="https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=1200&q=80">
-
 <div class="card-content">
-
 <h3>Industrial Seminars</h3>
-
 <p>
-Regular seminars covering industrial policies, market trends, emerging opportunities and business growth strategies.
+Regular seminars focused on industrial policies, market trends, business opportunities and government initiatives.
 </p>
-
 </div>
-
 </div>
 
 <div class="card">
-
 <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1200&q=80">
-
 <div class="card-content">
-
 <h3>HR Development Workshops</h3>
-
 <p>
-Training programs focused on leadership development, workforce productivity, management excellence and professional growth.
+Professional training sessions designed to improve leadership skills, workforce productivity and management effectiveness.
 </p>
-
 </div>
-
 </div>
 
 <div class="card">
-
 <img src="https://images.unsplash.com/photo-1515169067868-5387ec356754?auto=format&fit=crop&w=1200&q=80">
-
 <div class="card-content">
-
-<h3>Business Networking Meets</h3>
-
+<h3>Networking Meets</h3>
 <p>
-Providing opportunities for entrepreneurs, manufacturers and business leaders to connect and collaborate.
+Business networking events that encourage collaboration, partnerships and growth opportunities.
 </p>
-
 </div>
-
 </div>
 
 <div class="card">
-
 <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&q=80">
-
 <div class="card-content">
-
-<h3>Government & Industry Interaction</h3>
-
+<h3>Industry-Government Interaction</h3>
 <p>
-Interactive sessions where industries can directly engage with government officials and discuss important issues.
+Open forums where industries can directly interact with government authorities and discuss key concerns.
 </p>
-
 </div>
-
 </div>
 
 <div class="card">
-
 <img src="https://images.unsplash.com/photo-1431540015161-0bf868a2d407?auto=format&fit=crop&w=1200&q=80">
-
 <div class="card-content">
-
-<h3>Compliance Awareness Sessions</h3>
-
+<h3>Compliance Awareness Programs</h3>
 <p>
-Workshops designed to educate industries on legal requirements, industrial regulations and compliance best practices.
+Awareness sessions focused on industrial regulations, compliance requirements and best practices.
 </p>
-
 </div>
-
 </div>
 
 <div class="card">
-
 <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1200&q=80">
-
 <div class="card-content">
-
 <h3>Annual Industry Conferences</h3>
-
 <p>
-Large-scale events bringing together policymakers, industry experts and business leaders to discuss industrial growth.
+Large-scale events bringing together policymakers, industrial experts and entrepreneurs under one platform.
 </p>
-
 </div>
-
 </div>
 
 </div>
 
 <div class="highlight">
 
-<h2 style="text-align:center;">Benefits of Participation</h2>
+<h2>Why Participate in BCI Events?</h2>
+
+<p>
+Our events are designed to create opportunities for learning, networking, collaboration and professional growth. Members gain valuable industry insights, policy updates and direct access to experts and decision-makers.
+</p>
+
+</div>
+
+<h2 class="section-title">Benefits of Participation</h2>
 
 <div class="benefits">
 
-<div class="benefit">Industry Updates</div>
-
-<div class="benefit">Knowledge Sharing</div>
-
-<div class="benefit">Networking Opportunities</div>
-
+<div class="benefit">Industry Updates & Insights</div>
 <div class="benefit">Government Interaction</div>
-
-<div class="benefit">Business Growth Insights</div>
-
+<div class="benefit">Business Networking</div>
+<div class="benefit">Knowledge Sharing</div>
 <div class="benefit">Professional Development</div>
+<div class="benefit">Growth Opportunities</div>
 
 </div>
+
+<div class="cta">
+
+<h2>Join Our Upcoming Events</h2>
+
+<p>
+Become part of a vibrant industrial community and stay connected with the latest seminars, workshops and networking opportunities.
+</p>
 
 </div>
 
